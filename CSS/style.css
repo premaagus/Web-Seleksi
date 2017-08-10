@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*=====================Standard-code==============================*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background: #E9E9E9;
+}
+
+.container
+{
+	width: 80%;
+	margin: auto;
+	height: auto;
+}
+
+.container-full
+{
+	width: 100%;
+	margin: auto;
+	height: auto;
+}
+
+/*=====================Navbar==============================*/
+
+.nav
+{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: #262626;
+}
+
+.nav ul
+{
+	list-style:none;
+}
+
+
+.nav ul li a
+{
+	float: left;
+	font-size: 15px;
+	text-decoration: none;
+	color: #B1B1B1;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	background: #262626;
+	line-height: 10px;
+	height: 10px;
+	padding: 20px;
+	border: none;
+	transition: 0.1s ease-in;
+}
+
+.nav ul li a:hover
+{
+	color: white;
+	border-bottom: 3px solid #54B537;
+	height: 7px;
+}
+
+/*=====================Header==============================*/
+
+.header
+{
+	background: url(../Image/header.jpg);
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 525px;
+	padding-top: 50px;
+}
+
+.header-txt
+{
+	width: 50%;
+	height: 300px;
+	margin: auto;
+	text-align: center;
+	color: white;
+	margin-top: 150px;
+}
+
+.header-txt h1
+{
+	font-size: 50px;
+	text-shadow: 1px 1px 2px black;
+}
+
+.header-txt p
+{
+	font-size: 24px;
+	text-shadow: 1px 1px 2px black;
+}
+
+.learn
+{
+	width: 100px;
+	height: 40px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.learn a
+{
+	width: 100%;
+	height: 100%;
+	color: white;
+	float: left;
+	text-decoration: none;
+	line-height: 40px;
+	border: 2px solid white;
+	transition: 0.2s ease;
+}
+
+.learn a:hover
+{
+	color: #30EB4B;
+	border: 2px solid #30EB4B;
+}
+
+/*========================Booking================================*/
+
+.booking
+{
+	width: 80%;
+	height: 250px;
+	background: #131923;
+	margin: auto;
+	margin-top: -100px;
+	text-align: center;
+	color: white;
+}
+
+.booking h1
+{
+	padding: 20px;
+}
+
+
+.booking table
+{
+	margin: auto;
+}
+
+.tb-kiri
+{
+	width: 50%;
+	float: left;
+	height: auto;
+}
+
+.tb-kanan
+{
+	width: 50%;
+	float: left;
+	height: auto;
+}
+
+.booking input
+{
+	width: 60%;
+	height: 50px;
+	background: #0E1527;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.btn-booking
+{
+	width: 150px;
+	height: 40px;
+	clear: left;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.btn-booking a
+{
+	width: 150px;
+	height: 40px;
+	background: #153A7C;
+	float: left;
+	text-decoration: none;
+	color: white;
+	line-height: 40px;
+	transition: 0.2s ease;
+}
+
+.btn-booking a:hover
+{
+	background: #142B80;
+}
+
+/*================================Profile========================*/
+
+.profile
+{
+	width: 100%;
+	height: auto;
+	padding: 50px 0px;
+	text-align: center;
+	color: darkslategray;
+}
+
+.dimara-prf
+{
+	width: 100%;
+	height: auto;
+}
+
+.dimara-prf img
+{
+	max-width: 20%;
+	margin-top: 20px;
+}
+
+/*================================Facility========================*/
+
+.facility
+{
+	width: 100%;
+	height: 400px;
+	background: red;
+	padding-top: 20px;
+}
+
+.catalog
+{
+	width: 30%;
+	height: 200px;;
+	margin-left: 2.5%;
+	background: aqua;
+	float: left;
+}
+
+.gym
+{
+	background: url(../Image/Gym.jpg);
+	background-position: center center;
+	background-size: cover;
+}
