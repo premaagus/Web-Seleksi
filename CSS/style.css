@@ -36,6 +36,7 @@ body
 	height: 50px;
 	position: fixed;
 	background: #262626;
+	z-index: 99;
 }
 
 .nav ul
@@ -230,23 +231,328 @@ body
 .facility
 {
 	width: 100%;
-	height: 400px;
-	background: red;
+	height: 475px;
 	padding-top: 20px;
 }
 
-.catalog
+.catalog2
+{
+	width: 60%;
+	height: 200px;
+	margin-left: 3.33%;
+	float: left;
+	margin-top: 20px;
+	box-shadow: 1px 1px 5px 5px #E8E8E8;
+	overflow: hidden;
+}
+
+.catalog1
 {
 	width: 30%;
-	height: 200px;;
-	margin-left: 2.5%;
-	background: aqua;
+	height: 200px;
+	background: black;
 	float: left;
+	margin-left: 3.33%;
+	margin-top: 20px;
+	box-shadow: 1px 1px 5px 5px #E8E8E8;
+	overflow: hidden;
 }
 
 .gym
 {
 	background: url(../Image/Gym.jpg);
-	background-position: center center;
 	background-size: cover;
+	background-position: center center;
+}
+
+.restaurant
+{
+	background: url(../Image/restaurant-banner2.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.spa
+{
+	background: url(../Image/spa.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.laundry
+{
+	background: url(../Image/laundry.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.hover
+{
+	width: 100%;
+	height: 95%;
+	padding-top: 5%;
+	background: rgba(0,0,0,0.73);
+	transform: translateY(200px);
+	transition: 0.25s ease;
+	opacity: 0;
+	color: #ECECEC;
+	text-align: center;
+}
+
+.catalog2:hover .hover
+{
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.catalog1:hover .hover
+{
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.hover p
+{
+	max-width: 70%;
+	margin: auto;
+	margin-top: 20px;
+	text-align: justify;
+}
+
+/*--------------------------Maps---------------------------------*/
+
+.maps
+{
+	text-align: center;
+	color: darkslategray;
+}
+
+.maps iframe
+{
+	width: 100%;
+	height: 300px;
+	border: none;
+	margin-top: 20px;
+}
+
+/*-------------------------How Do We Work------------------------*/
+
+.hdww
+{
+	padding: 20px 0px;
+	color: ivory;
+	text-align: center;
+	height: 500px;
+}
+
+.hdww h1
+{
+	margin-bottom: 20px;
+	color: darkslategray;
+}
+
+.row3
+{
+	width: 30%;
+	height: 350px;
+	margin-left: 2.5%;
+	float: left;
+	margin-top: 10px;
+	background: #2E2E2E;
+	padding: 20px 0px;
+	border-radius: 5px;
+}
+.row3 p
+	{
+		max-width: 80%;
+		margin: auto;
+	}
+
+.row3 i
+{
+	font-size: 150px;
+	margin: 20px 0;
+}
+
+/*--------------------------Footer----------------------------*/
+
+.footer
+{
+	height: 300px;
+	background: #222222;
+}
+
+@media(max-width: 1000px)
+{
+	/*-------------------------How Do We Work------------------------*/
+
+.hdww
+{
+	padding: 20px 0px;
+	color: ivory;
+	text-align: center;
+	height: 1400px;
+}
+
+.hdww h1
+{
+	margin-bottom: 20px;
+	color: darkslategray;
+}
+
+.row3
+{
+	width: 80%;
+	height: 350px;
+	margin-left: 10%;
+	float: left;
+	margin-top: 10px;
+	background: #2E2E2E;
+	padding: 20px 0px;
+	border-radius: 5px;
+}
+
+.row3 p
+	{
+		max-width: 80%;
+		margin: auto;
+	}
+
+.row3 i
+{
+	font-size: 150px;
+	margin: 20px 0;
+}
+	
+	/*================================Facility========================*/
+
+.facility
+{
+	width: 100%;
+	height: 1000px;
+	padding-top: 20px;
+}
+
+.catalog2
+{
+	width: 100%;
+	height: 250px;
+	margin-left: 3.33%;
+	margin-top: 20px;
+	box-shadow: 1px 1px 5px 5px #E8E8E8;
+	overflow: hidden;
+}
+
+.catalog1
+{
+	width: 100%;
+	height: 200px;
+	background: black;
+	margin-left: 3.33%;
+	margin-top: 20px;
+	box-shadow: 1px 1px 5px 5px #E8E8E8;
+	overflow: hidden;
+}
+
+.gym
+{
+	background: url(../Image/Gym.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.restaurant
+{
+	background: url(../Image/restaurant-banner2.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.spa
+{
+	background: url(../Image/spa.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.laundry
+{
+	background: url(../Image/laundry.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.hover
+{
+	width: 100%;
+	height: 95%;
+	padding-top: 5%;
+	background: rgba(0,0,0,0.73);
+	margin-top: 300px;
+	transition: 0.25s ease;
+	opacity: 0;
+	color: #ECECEC;
+	text-align: center;
+}
+
+.catalog2:hover .hover
+{
+	margin-top: 0px;
+	opacity: 1;
+}
+
+.catalog1:hover .hover
+{
+	margin-top: 0px;
+	opacity: 1;
+}
+
+.hover p
+{
+	max-width: 70%;
+	margin: auto;
+	margin-top: 20px;
+	text-align: justify;
+}
+
+	
+	/*=====================Navbar==============================*/
+
+.nav
+{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: #262626;
+	z-index: 99;
+}
+
+.nav ul
+{
+	list-style:none;
+}
+
+
+.nav ul li a
+{
+	float: left;
+	font-size: 11px;
+	text-decoration: none;
+	color: #B1B1B1;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	background: #262626;
+	line-height: 10px;
+	height: 10px;
+	padding: 20px;
+	border: none;
+	transition: 0.1s ease-in;
+}
+
+.nav ul li a:hover
+{
+	color: white;
+	border-bottom: 3px solid #54B537;
+	height: 7px;
+}
+
 }

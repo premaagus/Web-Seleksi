@@ -4,21 +4,23 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
 <link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/font-awesome.css">
+<script src="Js/jquery-1.11.3.min.js"></script>
 </head>
 
 <body>
 	<header>
 		<div class="nav">
 			<ul>
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="#">Favorite</a></li>
-				<li><a href="#">How Do We Work?</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#facility">Facilities</a></li>
+				<li><a href="#hdww">How Do We Work?</a></li>
 			</ul>
 		</div>
 	</header>
 	
-	<div class="container-full">
+	<div class="container-full" id="home">
 		<div class="header">
 			<div class="header-txt">
 				<h1>DIMARA</h1>
@@ -43,7 +45,7 @@
 		</div>
 	</div>
 	
-	<div class="container">
+	<div class="container" id="about">
 		<div class="profile">
 			<div class="dimara-prf">
 				<h1>DIMARA</h1>
@@ -56,12 +58,85 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" id="facility">
 		<div class="facility">
-			<div class="catalog gym"></div>
-			<div class="catalog"></div>
-			<div class="catalog"></div>
+			<div class="catalog2 gym">
+				<div class="hover">
+					<h3>GYM</h3>
+					<p>Keep up with your fitness routine whilst you’re away with our free in-house gym. Packed with cardio and resistance equipment and free weights, you can unwind after a busy day in the capital at the 5-star DIMARA Hotel.</p>
+				</div>
+			</div>
+			<div class="catalog1 spa">
+				<div class="hover">
+					<h3>SPA</h3>
+					<p>We would love to introduce you to this amazing relaxing and refreshing experience.</p>
+				</div>
+			</div>
+			<div class="catalog1 laundry">
+				<div class="hover">
+					<h3>LAUNDRY</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure delectus rem voluptates eveniet cum deleniti</p>
+				</div>
+			</div>
+			<div class="catalog2 restaurant">
+				<div class="hover">
+					<h3>RESTAURANT</h3>
+					<p>The DIMARA Hotel Restaurant has been renovated and is ready to welcome you! For breakfast or lunch, the elegant environment of the DIMARA Roof Garden Restaurant creates a tranquil atmosphere, while dinner is perfect when the city lights come on.</p>
+				</div>
+			</div>
 		</div>
 	</div>
+	
+	<div class="container-full maps">
+		<h1>Find Us</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.0031527107153!2d115.13672351420675!3d-8.785772093689777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2448af6f410a5%3A0x313ee67691a146ca!2sAYANA+Resort+and+Spa+Bali!5e0!3m2!1sid!2sid!4v1502445593365" allowfullscreen></iframe>
+	</div>
+	
+	<div class="container hdww" id="hdww">
+		<h1>How Do We Work</h1>
+		<div class="row3">
+			<h2>Call</h2>
+			<i class="fa fa-phone" aria-hidden="true"></i>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga laudantium commodi laboriosam ad est distinctio optio, deleniti iure consequatur</p>
+		</div>
+		<div class="row3">
+			<h2>You Got The Key</h2>
+			<i class="fa fa-key" aria-hidden="true"></i>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga laudantium commodi laboriosam ad est distinctio optio, deleniti iure consequatur</p>
+		</div>
+		<div class="row3">
+			<h2>Relax</h2>
+			<i class="fa fa-bed" aria-hidden="true"></i>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga laudantium commodi laboriosam ad est distinctio optio, deleniti iure consequatur</p>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container-full footer">
+			<h1>Footer</h1>
+		</div>
+	</footer>
+	
+	<script>
+	$(document).ready(function() {
+        $('a[href^="#"]').click(function(e){
+			
+			var target = $(this).attr('href');
+			var strip = target.slice(1);
+			var jangkar = $("div[id='" + strip + "']");
+			var navbarh = $('nav').outerHeight();
+			
+			e.preventDefault();
+			
+			
+			$('html, body').animate({
+				scrollTop: jangkar.offset().top - navbarh
+				
+				},1000);
+			
+			});
+    });
+	
+	</script>
 </body>
 </html>
